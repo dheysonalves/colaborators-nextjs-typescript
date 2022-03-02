@@ -1,7 +1,14 @@
 {
 	"presets": [
-		"next/babel",
-		"@babel/preset-typescript"
+		[
+			"next/babel",
+			{
+				"preset-react": {
+					"runtime": "automatic"
+				}
+			},
+			"@babel/preset-typescript"
+		]
 	],
 	"plugins": [
 		[
@@ -9,10 +16,16 @@
 			{
 				"ssr": true,
 				"displayName": true
-			}
+			},
+			"@emotion/babel-plugin"
 		]
 	],
 	"env": {
+		"production": {
+			"plugins": [
+				"@emotion"
+			]
+		},
 		"test": {
 			"plugins": [
 				[
@@ -20,7 +33,8 @@
 					{
 						"ssr": false,
 						"displayName": false
-					}
+					},
+					"@emotion/babel-plugin"
 				]
 			]
 		}

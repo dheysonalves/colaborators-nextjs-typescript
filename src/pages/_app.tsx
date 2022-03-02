@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { Global } from '@emotion/core'
 
 import GlobalStyles from 'styles/global'
 
@@ -18,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
 					content="A simple project starter to work with typescript, React, NextJs and Styled Components"
 				/>
 			</Head>
-			<GlobalStyles />
+			<Global styles={GlobalStyles} />
 			<ErrorBoundary>
 				<Component {...pageProps} />
 			</ErrorBoundary>

@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 import GlobalStyles from 'styles/global'
 
+import ErrorBoundary from 'components/ErrorBoundary'
+
 function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
@@ -17,7 +19,9 @@ function App({ Component, pageProps }: AppProps) {
 				/>
 			</Head>
 			<GlobalStyles />
-			<Component {...pageProps} />
+			<ErrorBoundary>
+				<Component {...pageProps} />
+			</ErrorBoundary>
 		</>
 	)
 }

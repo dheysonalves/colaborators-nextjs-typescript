@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Typography /> should render the heading 1`] = `
+<h1
+  class="css-0"
+>
+  Typography H1
+</h1>
+`

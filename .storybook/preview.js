@@ -5,7 +5,7 @@ import { Global } from '@emotion/core'
 
 export const decorators = [
 	(Story) => (
-		<ThemeProvider theme={theme}>
+		<ThemeProvider theme={theme.light}>
 			<Global styles={GlobalStyles} />
 			<Story />
 		</ThemeProvider>

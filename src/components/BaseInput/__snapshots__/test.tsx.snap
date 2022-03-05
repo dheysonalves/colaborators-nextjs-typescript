@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BaseInput /> should fire a input event 1`] = `
+<div
+  class="css-17enijm"
+>
+  <label
+    class="css-o15x8b"
+    for="input-search"
+  >
+    Pesquise por nome ou cpf
+  </label>
+  <div
+    class="css-1e3v0jf"
+  >
+    <svg
+      color="#587169"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      style="color: rgb(88, 113, 105);"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="11"
+        cy="11"
+        r="8"
+      />
+      <line
+        x1="21"
+        x2="16.65"
+        y1="21"
+        y2="16.65"
+      />
+    </svg>
+    <input
+      aria-label="base-search-input"
+      class="css-1m5m2pc"
+      id="input-search"
+      name="input-search"
+      placeholder="Pesquise por"
+      type="text"
+      value="Colaboradores"
+    />
+  </div>
+</div>
+`

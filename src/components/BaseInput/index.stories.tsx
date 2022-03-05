@@ -4,7 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import BaseInput from '.'
 
 export default {
-	title: 'BaseInput',
+	title: 'Inputs/BaseInput',
 	component: BaseInput,
 	args: {
 		label: 'Pesquise por',

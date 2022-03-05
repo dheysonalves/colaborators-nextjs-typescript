@@ -7,7 +7,7 @@ exports[`<Main /> should render the heading 1`] = `
   <img
     alt="Imagem de um átomo e React Avançado escrito ao lado"
     class="css-7dqviz"
-    src="/img/logo.svg"
+    src="/img/brand.svg"
   />
   <h1
     class="css-90o7z8"
@@ -19,10 +19,5 @@ exports[`<Main /> should render the heading 1`] = `
   >
     Typescript, NextJS and Styled Components
   </p>
-  <img
-    alt="Um desenvolvedor de frente para uma tela com código"
-    class="css-1986qtn"
-    src="/img/hero-illustration.svg"
-  />
 </main>
 `

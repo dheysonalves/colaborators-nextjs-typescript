@@ -2,7 +2,6 @@ import React from 'react'
 import UserDetails from '../UserDetails'
 import * as S from './styles'
 import Media from 'react-media'
-import Image from 'next/image'
 
 const NavBar = () => {
 	return (
@@ -15,7 +14,7 @@ const NavBar = () => {
 							<UserDetails name="Dheyson Alves" status="Testing" />
 						</S.LeftBorder>
 						<S.RightBorder>
-							<Image alt="logo" src="/img/logo.svg" width={32} height={32} />
+							<img alt="logo" src="/img/brand.svg" width={32} height={32} />
 						</S.RightBorder>
 					</>
 				)}
@@ -25,7 +24,7 @@ const NavBar = () => {
 				render={() => (
 					<>
 						<S.RightBorder>
-							<Image alt="logo" src="/img/logo.svg" width={32} height={32} />
+							<img alt="logo" src="/img/brand.svg" width={32} height={32} />
 						</S.RightBorder>
 						<S.LeftBorder>
 							<UserDetails name="Dheyson Alves" status="Testing" />

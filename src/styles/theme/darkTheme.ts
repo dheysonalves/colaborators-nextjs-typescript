@@ -23,3 +23,9 @@ const COLORS = {
 }
 
 export default COLORS
+
+export const theme = {
+	dark: {
+		...COLORS
+	}
+}

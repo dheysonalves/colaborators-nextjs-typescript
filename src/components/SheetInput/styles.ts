@@ -5,7 +5,7 @@ import { Paragraph } from '../Typography/base.index'
 export const Wrapper = styled(Container)`
 	justify-content: space-between;
 	align-items: center;
-	padding: 4px 14px;
+	padding: 8px 14px;
 	border-radius: 8px;
 	border: 2px solid #cad6d1;
 `

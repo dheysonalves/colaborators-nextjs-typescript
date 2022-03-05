@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SheetInput /> should render the heading 1`] = `
+<div
+  class="css-xylfo5"
+>
+  <h1
+    class="css-1om8i5c"
+  >
+    Colaboradores
+  </h1>
+  <button
+    class="css-y3q99c"
+  >
+    <svg
+      color="#587169"
+      fill="currentColor"
+      height="24"
+      stroke="currentColor"
+      stroke-width="0"
+      style="color: rgb(88, 113, 105);"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
+  </button>
+</div>
+`

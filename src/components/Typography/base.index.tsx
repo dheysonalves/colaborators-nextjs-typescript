@@ -15,7 +15,6 @@ const BaseTypography = styled(DynamicTypography)`
 
 const Paragraph = styled(DynamicTypography)`
 	${MainStyle};
-	font-size: 1rem;
 	color: ${theme.light.neutral.neutral_5};
 	font-weight: 400;
 `

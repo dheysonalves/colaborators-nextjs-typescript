@@ -28,7 +28,7 @@ exports[`<NavBar /> should render the heading 1`] = `
           Dheyson Alves
         </h1>
         <h2
-          class="css-ht8tt0"
+          class="css-1xrsu0h"
         >
           Testing
         </h2>
@@ -109,7 +109,7 @@ exports[`<NavBar /> should render the heading 1`] = `
           Dheyson Alves
         </h1>
         <h2
-          class="css-ht8tt0"
+          class="css-1xrsu0h"
         >
           Testing
         </h2>

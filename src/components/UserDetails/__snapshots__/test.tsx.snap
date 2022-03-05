@@ -22,7 +22,7 @@ exports[`<UserDetails /> should render the heading name and status 1`] = `
       Luiz Zlochevsky
     </h1>
     <h2
-      class="css-ht8tt0"
+      class="css-1xrsu0h"
     >
       meus dados
     </h2>

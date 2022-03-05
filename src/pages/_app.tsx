@@ -5,6 +5,8 @@ import { Global } from '@emotion/core'
 import GlobalStyles from 'styles/global'
 
 import ErrorBoundary from 'components/ErrorBoundary'
+import { ThemeProvider } from '@emotion/react'
+import { theme } from 'styles/theme/lightTheme'
 
 function App({ Component, pageProps }: AppProps) {
 	return (
@@ -19,10 +21,12 @@ function App({ Component, pageProps }: AppProps) {
 					content="A simple project starter to work with typescript, React, NextJs and Styled Components"
 				/>
 			</Head>
-			<Global styles={GlobalStyles} />
-			<ErrorBoundary>
-				<Component {...pageProps} />
-			</ErrorBoundary>
+			<ThemeProvider theme={theme.light}>
+				<Global styles={GlobalStyles} />
+				<ErrorBoundary>
+					<Component {...pageProps} />
+				</ErrorBoundary>
+			</ThemeProvider>
 		</>
 	)
 }

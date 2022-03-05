@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Main from '.'
 
 export default {
-	title: 'Main',
+	title: 'Layout/Main',
 	component: Main,
 	args: {
 		title: 'title default',

@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 type TypographyProps = {
 	tag: 'h1' | 'h2' | 'h3' | 'p'
-	children: JSX.Element
+	children: JSX.Element | string
 }
 const StyledDynamicTypography = styled.div``
 

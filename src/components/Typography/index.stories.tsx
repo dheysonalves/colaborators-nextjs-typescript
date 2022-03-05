@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Typography from '.'
 
 export default {
-	title: 'Typography',
+	title: 'Shared/Typography',
 	component: Typography,
 	args: {
 		tag: 'h1',

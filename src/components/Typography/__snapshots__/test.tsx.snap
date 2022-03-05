@@ -7,3 +7,27 @@ exports[`<Typography /> should render the heading 1`] = `
   Typography H1
 </h1>
 `
+
+exports[`<Typography /> should render the heading 2 1`] = `
+<h2
+  class="css-0"
+>
+  Typography H2
+</h2>
+`
+
+exports[`<Typography /> should render the heading 3 1`] = `
+<h3
+  class="css-0"
+>
+  Typography H3
+</h3>
+`
+
+exports[`<Typography /> should render the paragraph 1`] = `
+<p
+  class="css-0"
+>
+  Typography p
+</p>
+`

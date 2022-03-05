@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserDetails /> should render the heading name and status 1`] = `
+<div
+  class="css-89ps4g"
+>
+  <div
+    class="css-t2lkvl"
+  >
+    <p
+      class="css-32r4px"
+    >
+      LZ
+    </p>
+  </div>
+  <div
+    class="css-1s9w40j"
+  >
+    <h1
+      class="css-a8r7il"
+    >
+      Luiz Zlochevsky
+    </h1>
+    <h2
+      class="css-ht8tt0"
+    >
+      meus dados
+    </h2>
+  </div>
+</div>
+`

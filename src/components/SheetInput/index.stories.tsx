@@ -5,8 +5,8 @@ export default {
 	title: 'Inputs/SheetInput',
 	component: SheetInput,
 	args: {
-		title: 'Colaboradores'
-	}
+		title: 'Colaboradores',
+	},
 } as ComponentMeta<typeof SheetInput>
 
 export const Default: ComponentStory<typeof SheetInput> = (args) => (

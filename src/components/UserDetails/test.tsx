@@ -9,21 +9,21 @@ global.window.matchMedia = jest.fn().mockReturnValue({
 	},
 	removeListener: () => {
 		return
-	}
+	},
 })
 
 describe('<UserDetails />', () => {
 	it('should render the heading name and status', () => {
 		const { container } = render(
-			<UserDetails name="Luiz Zlochevsky" status="meus dados" />
+			<UserDetails name="Luiz Zlochevsky" status="meus dados" />,
 		)
 
 		expect(
-			screen.getByRole('heading', { name: /Luiz Zlochevsky/i })
+			screen.getByRole('heading', { name: /Luiz Zlochevsky/i }),
 		).toBeInTheDocument()
 
 		expect(
-			screen.getByRole('heading', { name: /meus dados/i })
+			screen.getByRole('heading', { name: /meus dados/i }),
 		).toBeInTheDocument()
 
 		expect(container.firstChild).toMatchSnapshot()

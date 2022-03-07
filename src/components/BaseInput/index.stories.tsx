@@ -8,8 +8,8 @@ export default {
 	component: BaseInput,
 	args: {
 		label: 'Pesquise por',
-		placeholderText: 'Pesquise por nome ou cpf'
-	}
+		placeholderText: 'Pesquise por nome ou cpf',
+	},
 } as ComponentMeta<typeof BaseInput>
 
 export const Default: ComponentStory<typeof BaseInput> = (args) => {

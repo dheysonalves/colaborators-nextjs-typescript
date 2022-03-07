@@ -1,7 +1,7 @@
 export const theme = {
 	light: {
 		brand: {
-			blue: '#034AFD'
+			blue: '#034AFD',
 		},
 		neutral: {
 			background: '#F8FAF9',
@@ -9,17 +9,17 @@ export const theme = {
 			black: '#34423D',
 			neutral_2: '#F5FAF8',
 			neutral_3: '#A3B8B0',
-			neutral_5: '#587169'
+			neutral_5: '#587169',
 		},
 		primary: {
 			default: '#22E0A1',
-			green: '#B5F1DD'
+			green: '#B5F1DD',
 		},
 		feedback: {
-			success: '#B5F1DD'
+			success: '#B5F1DD',
 		},
 		tertiary: {
-			disabled: '#EAEFED'
-		}
-	}
+			disabled: '#EAEFED',
+		},
+	},
 }

@@ -4,7 +4,7 @@ import Document, {
 	Html,
 	Head,
 	Main,
-	NextScript
+	NextScript,
 } from 'next/document'
 
 export default class MyDocument extends Document {
@@ -13,12 +13,12 @@ export default class MyDocument extends Document {
 
 		ctx.renderPage = () =>
 			originalRenderPage({
-				enhanceApp: (App) => (props) => <App {...props} />
+				enhanceApp: (App) => (props) => <App {...props} />,
 			})
 		const initialProps = await Document.getInitialProps(ctx)
 		return {
 			...initialProps,
-			styles: <>{initialProps.styles}</>
+			styles: <>{initialProps.styles}</>,
 		}
 	}
 	render() {

@@ -7,8 +7,8 @@ export default {
 	component: Main,
 	args: {
 		title: 'title default',
-		description: 'description default'
-	}
+		description: 'description default',
+	},
 } as ComponentMeta<typeof Main>
 
 export const Basic: ComponentStory<typeof Main> = (args) => <Main {...args} />

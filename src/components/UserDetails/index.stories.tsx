@@ -6,8 +6,8 @@ export default {
 	component: UserDetails,
 	args: {
 		name: 'Luiz Zlochevsky',
-		status: 'meus dados'
-	}
+		status: 'meus dados',
+	},
 } as ComponentMeta<typeof UserDetails>
 
 export const Default: ComponentStory<typeof UserDetails> = (args) => (

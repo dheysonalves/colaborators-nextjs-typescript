@@ -1,7 +1,7 @@
 import {
 	AgentStatusTypes,
 	DepartamentRolesTypes,
-	NameRolesTypes
+	NameRolesTypes,
 } from './@types/general.types'
 import HttpInstance from './config/HttpCustomInstance'
 

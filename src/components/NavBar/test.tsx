@@ -9,7 +9,7 @@ global.window.matchMedia = jest.fn().mockReturnValue({
 	},
 	removeListener: () => {
 		return
-	}
+	},
 })
 
 describe('<NavBar />', () => {

@@ -7,7 +7,7 @@ describe('<Main />', () => {
 		const { container } = render(<Main />)
 
 		expect(
-			screen.getByRole('heading', { name: /react avancado/i })
+			screen.getByRole('heading', { name: /react avancado/i }),
 		).toBeInTheDocument()
 
 		expect(container.firstChild).toMatchSnapshot()

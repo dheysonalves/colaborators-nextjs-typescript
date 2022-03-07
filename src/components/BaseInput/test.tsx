@@ -4,13 +4,13 @@ import { render, fireEvent } from '@testing-library/react'
 import BaseInput from '.'
 
 describe('<BaseInput />', () => {
+	const utils = render(
+		<BaseInput
+			placeholderText="Pesquise por"
+			label="Pesquise por nome ou cpf"
+		/>
+	)
 	it('should fire a input event', () => {
-		const utils = render(
-			<BaseInput
-				placeholderText="Pesquise por"
-				label="Pesquise por nome ou cpf"
-			/>
-		)
 		const input = utils.getByLabelText('base-search-input') as HTMLInputElement
 
 		fireEvent.change(input, { target: { value: 'Colaboradores' } })

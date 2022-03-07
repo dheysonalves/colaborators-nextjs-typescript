@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccordionItem /> should render the heading 1`] = `
+<div
+  class="css-qgeubr"
+>
+  <div
+    class="css-1s9w40j"
+  >
+    <h1
+      class="css-1ccxq8z"
+    >
+      Nome completo
+    </h1>
+    <div
+      class="css-o34hqt"
+    >
+      <div
+        class="css-o34hqt"
+      >
+        <img
+          class="css-1q4j5aa"
+          src="/img/brand.svg"
+        />
+        <h1
+          class="css-1fppzxh"
+        >
+          Pikachu Soares do Santos Dias
+        </h1>
+      </div>
+      <svg
+        color="#587169"
+        fill="currentColor"
+        height="24"
+        stroke="currentColor"
+        stroke-width="0"
+        style="color: rgb(88, 113, 105);"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
+    <div>
+      <h1
+        class="css-1ccxq8z"
+      >
+        Departamento
+      </h1>
+      <p
+        class="css-ud68x3"
+      >
+        Administrativo
+      </p>
+    </div>
+  </div>
+</div>
+`

@@ -12,7 +12,7 @@ const SheetInput = ({ title, callback }: SheetInputProps) => {
 	return (
 		<Wrapper>
 			<CustomParagraph tag="h1">{title}</CustomParagraph>
-			<NoStyleButton onClick={callback}>
+			<NoStyleButton onClick={callback} aria-label="icon-button">
 				<BiDotsVerticalRounded size={24} color="#587169" />
 			</NoStyleButton>
 		</Wrapper>

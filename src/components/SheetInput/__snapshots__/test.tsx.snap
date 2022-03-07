@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SheetInput /> should render the heading 1`] = `
+exports[`<SheetInput /> should render the input heading 1`] = `
 <div
   class="css-17a74z4"
 >
@@ -10,6 +10,7 @@ exports[`<SheetInput /> should render the heading 1`] = `
     Colaboradores
   </h1>
   <button
+    aria-label="icon-button"
     class="css-y3q99c"
   >
     <svg

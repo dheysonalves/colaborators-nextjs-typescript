@@ -1,15 +1,15 @@
-import GlobalStyles from '../src/styles/global';
-import { ThemeProvider } from '@emotion/react'
-import { theme } from '../src/styles/theme/lightTheme'
 import { Global } from '@emotion/core'
+import { ThemeProvider } from "emotion-theming";
+import GlobalStyles from '../src/styles/global';
+import { theme } from '../src/styles/theme/theme'
 
 export const decorators = [
 	(Story) => (
-		<ThemeProvider theme={theme.light}>
+		<ThemeProvider theme={theme} >
 			<Global styles={GlobalStyles} />
 			<Story />
 		</ThemeProvider>
-	)
+	),
 ]
 
 export const parameters = {

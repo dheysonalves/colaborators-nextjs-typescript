@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { theme } from '../../styles/theme/lightTheme'
+import { theme } from '../../styles/theme/theme'
 import DynamicTypography from '../Typography'
 
 export const UserAvatar = styled.div`
@@ -20,7 +20,7 @@ export const UserAvatar = styled.div`
 export const Name = styled(DynamicTypography)`
 	line-height: 100%;
 	font-size: 14px;
-	color: ${theme.light.neutral.black};
+	color: ${theme.light.primary.green};
 	text-transform: uppercase;
 	font-weight: 400;
 `

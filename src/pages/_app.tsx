@@ -6,7 +6,8 @@ import GlobalStyles from 'styles/global'
 
 import ErrorBoundary from 'components/ErrorBoundary'
 import { ThemeProvider } from '@emotion/react'
-import { theme } from 'styles/theme/lightTheme'
+
+import { theme } from '../styles/theme/theme'
 
 function App({ Component, pageProps }: AppProps) {
 	return (
@@ -27,7 +28,7 @@ function App({ Component, pageProps }: AppProps) {
 					rel="stylesheet"
 				></link>
 			</Head>
-			<ThemeProvider theme={theme.light}>
+			<ThemeProvider theme={theme}>
 				<Global styles={GlobalStyles} />
 				<ErrorBoundary>
 					<Component {...pageProps} />

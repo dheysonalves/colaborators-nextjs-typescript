@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { Container } from '../utils/Flex/flex.styles'
-import { theme } from '../../styles/theme/lightTheme'
+import { theme } from '../../styles/theme/theme'
 
 export const Wrapper = styled(Container)`
 	border: 1px solid ${theme.light.tertiary.disabled};

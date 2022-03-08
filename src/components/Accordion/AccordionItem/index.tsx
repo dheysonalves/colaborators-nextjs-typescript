@@ -18,24 +18,29 @@ import {
 	NameRolesTypes,
 } from '../../../api/@types/general.types'
 
-interface IAccordionItemProps {
-	agent_id: number
-	name: string
-	image: string
-	department: DepartamentRolesTypes
-	branch: string
-	role: NameRolesTypes
-	status: AgentStatusTypes
+export interface IAccordionItemProps {
+	data: {
+		agent_id: number
+		name: string
+		image: string
+		department: DepartamentRolesTypes
+		branch: string
+		role: NameRolesTypes
+		status: AgentStatusTypes
+	}
 }
 
-const AccordionItem = (data: IAccordionItemProps) => {
+const AccordionItem = ({ data }: IAccordionItemProps) => {
 	const [toogle, setToogle] = useState(false)
 
 	return (
 		<ContainerBorder>
 			<Container column>
 				<Title tag="h1">Nome Completo</Title>
-				<ButtoHeaderContainer onClick={() => setToogle(!toogle)}>
+				<ButtoHeaderContainer
+					onClick={() => setToogle(!toogle)}
+					aria-label="button-toogle"
+				>
 					<CustomFlexContainer>
 						<UserAvatar src={data.image ?? '/img/brand.svg'} />
 						<UserTitleName tag="h1">{data.name}</UserTitleName>
@@ -55,10 +60,6 @@ const AccordionItem = (data: IAccordionItemProps) => {
 						<div>
 							<Title tag="h1">Cargo</Title>
 							<Description tag="p">{data.role}</Description>
-						</div>
-						<div>
-							<Title tag="h1">Unidade</Title>
-							<Description tag="p">{data.branch}</Description>
 						</div>
 						<div>
 							<Title tag="h1">Unidade</Title>

@@ -14,7 +14,7 @@ exports[`<NavBar /> should render the heading 1`] = `
         class="css-t2lkvl"
       >
         <p
-          class="css-32r4px"
+          class="css-1m4s1rb"
         >
           DA
         </p>
@@ -65,7 +65,7 @@ exports[`<NavBar /> should render the heading 1`] = `
         class="css-t2lkvl"
       >
         <p
-          class="css-32r4px"
+          class="css-1m4s1rb"
         >
           DA
         </p>

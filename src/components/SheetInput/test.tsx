@@ -1,9 +1,16 @@
+import React from 'react'
 import { render, screen } from '@testing-library/react'
+import { theme } from '../../styles/theme/theme'
 
 import SheetInput from '.'
+import { ThemeProvider } from '@emotion/react'
 
 const setup = () => {
-	const utils = render(<SheetInput title="Colaboradores" />)
+	const utils = render(
+		<ThemeProvider theme={theme}>
+			<SheetInput title="Colaboradores" />{' '}
+		</ThemeProvider>,
+	)
 	const button = utils.getByLabelText('icon-button') as HTMLButtonElement
 	return {
 		button,

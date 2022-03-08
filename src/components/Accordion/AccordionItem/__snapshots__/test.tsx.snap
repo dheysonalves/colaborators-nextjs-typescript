@@ -88,22 +88,24 @@ exports[`<AccordionItem /> should render the branch \`Quartel General\` 1`] = `
           Quartel General
         </p>
       </div>
-      <div>
-        <h1
-          class="css-1ccxq8z"
+    </div>
+    <div
+      class="css-nrzz4n"
+    >
+      <h1
+        class="css-1ccxq8z"
+      >
+        Status
+      </h1>
+      <div
+        class="css-1xl4ljt"
+        color="active"
+      >
+        <h3
+          class="css-1rt2vi7"
         >
-          Status
-        </h1>
-        <div
-          class="css-1xl4ljt"
-          color="active"
-        >
-          <h3
-            class="css-1rt2vi7"
-          >
-            Ativo
-          </h3>
-        </div>
+          Ativo
+        </h3>
       </div>
     </div>
   </div>
@@ -200,22 +202,24 @@ exports[
           Quartel General
         </p>
       </div>
-      <div>
-        <h1
-          class="css-1ccxq8z"
+    </div>
+    <div
+      class="css-nrzz4n"
+    >
+      <h1
+        class="css-1ccxq8z"
+      >
+        Status
+      </h1>
+      <div
+        class="css-1xl4ljt"
+        color="active"
+      >
+        <h3
+          class="css-1rt2vi7"
         >
-          Status
-        </h1>
-        <div
-          class="css-1xl4ljt"
-          color="active"
-        >
-          <h3
-            class="css-1rt2vi7"
-          >
-            Ativo
-          </h3>
-        </div>
+          Ativo
+        </h3>
       </div>
     </div>
   </div>
@@ -312,22 +316,24 @@ exports[
           Quartel General
         </p>
       </div>
-      <div>
-        <h1
-          class="css-1ccxq8z"
+    </div>
+    <div
+      class="css-nrzz4n"
+    >
+      <h1
+        class="css-1ccxq8z"
+      >
+        Status
+      </h1>
+      <div
+        class="css-1xl4ljt"
+        color="active"
+      >
+        <h3
+          class="css-1rt2vi7"
         >
-          Status
-        </h1>
-        <div
-          class="css-1xl4ljt"
-          color="active"
-        >
-          <h3
-            class="css-1rt2vi7"
-          >
-            Ativo
-          </h3>
-        </div>
+          Ativo
+        </h3>
       </div>
     </div>
   </div>
@@ -422,22 +428,24 @@ exports[`<AccordionItem /> should render the role \`Analista\` 1`] = `
           Quartel General
         </p>
       </div>
-      <div>
-        <h1
-          class="css-1ccxq8z"
+    </div>
+    <div
+      class="css-nrzz4n"
+    >
+      <h1
+        class="css-1ccxq8z"
+      >
+        Status
+      </h1>
+      <div
+        class="css-1xl4ljt"
+        color="active"
+      >
+        <h3
+          class="css-1rt2vi7"
         >
-          Status
-        </h1>
-        <div
-          class="css-1xl4ljt"
-          color="active"
-        >
-          <h3
-            class="css-1rt2vi7"
-          >
-            Ativo
-          </h3>
-        </div>
+          Ativo
+        </h3>
       </div>
     </div>
   </div>
@@ -532,22 +540,24 @@ exports[`<AccordionItem /> should render the status \`Ativo\` 1`] = `
           Quartel General
         </p>
       </div>
-      <div>
-        <h1
-          class="css-1ccxq8z"
+    </div>
+    <div
+      class="css-nrzz4n"
+    >
+      <h1
+        class="css-1ccxq8z"
+      >
+        Status
+      </h1>
+      <div
+        class="css-1xl4ljt"
+        color="active"
+      >
+        <h3
+          class="css-1rt2vi7"
         >
-          Status
-        </h1>
-        <div
-          class="css-1xl4ljt"
-          color="active"
-        >
-          <h3
-            class="css-1rt2vi7"
-          >
-            Ativo
-          </h3>
-        </div>
+          Ativo
+        </h3>
       </div>
     </div>
   </div>

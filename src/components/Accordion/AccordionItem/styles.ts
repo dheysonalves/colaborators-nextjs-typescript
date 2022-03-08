@@ -51,6 +51,10 @@ export const GridContainer = styled.div`
 	margin-top: 20px;
 `
 
+export const StatusContainer = styled.div`
+	margin-top: 2rem;
+`
+
 export const UserAvatar = styled.img`
 	width: 32px;
 	height: 32px;

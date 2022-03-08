@@ -9,12 +9,15 @@ export default {
 	title: 'Composites/Accordion/AccordionItem',
 	component: AccordionItem,
 	args: {
-		agent_id: 1,
-		name: 'Pikachu Soares do Santos Dias',
-		branch: '123456789',
-		department: DepartamentRolesTypes.ADMINISTRATIVE,
-		role: NameRolesTypes.ANALYST,
-		status: AgentStatusTypes.ACTIVE,
+		data: {
+			agent_id: 1,
+			name: 'Pikachu Soares do Santos Dias',
+			branch: '123456789',
+			department: DepartamentRolesTypes.ADMINISTRATIVE,
+			role: NameRolesTypes.ANALYST,
+			status: AgentStatusTypes.ACTIVE,
+			image: '/img/brand.svg',
+		},
 	},
 } as ComponentMeta<typeof AccordionItem>
 

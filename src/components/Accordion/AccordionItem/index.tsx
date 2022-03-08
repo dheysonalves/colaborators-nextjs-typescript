@@ -8,6 +8,7 @@ import {
 	Description,
 	ButtoHeaderContainer,
 	GridContainer,
+	StatusContainer,
 } from './styles'
 import { Container } from '../../utils/Flex/flex.styles'
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md'
@@ -52,24 +53,26 @@ const AccordionItem = ({ data }: IAccordionItemProps) => {
 					)}
 				</ButtoHeaderContainer>
 				{toogle && (
-					<GridContainer>
-						<div>
-							<Title tag="h1">Departamento</Title>
-							<Description tag="p">{data.department}</Description>
-						</div>
-						<div>
-							<Title tag="h1">Cargo</Title>
-							<Description tag="p">{data.role}</Description>
-						</div>
-						<div>
-							<Title tag="h1">Unidade</Title>
-							<Description tag="p">{data.branch}</Description>
-						</div>
-						<div>
+					<>
+						<GridContainer>
+							<div>
+								<Title tag="h1">Departamento</Title>
+								<Description tag="p">{data.department}</Description>
+							</div>
+							<div>
+								<Title tag="h1">Cargo</Title>
+								<Description tag="p">{data.role}</Description>
+							</div>
+							<div>
+								<Title tag="h1">Unidade</Title>
+								<Description tag="p">{data.branch}</Description>
+							</div>
+						</GridContainer>
+						<StatusContainer>
 							<Title tag="h1">Status</Title>
 							<StatusPin status={data.status} />
-						</div>
-					</GridContainer>
+						</StatusContainer>
+					</>
 				)}
 			</Container>
 		</ContainerBorder>

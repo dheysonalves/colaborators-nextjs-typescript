@@ -2,7 +2,7 @@
 
 exports[`<BaseInput /> it should allow Colaboradores to be deleted 1`] = `
 <div
-  class="css-17enijm"
+  class="css-zb6yxz"
 >
   <label
     class="css-o15x8b"
@@ -53,7 +53,7 @@ exports[`<BaseInput /> it should allow Colaboradores to be deleted 1`] = `
 
 exports[`<BaseInput /> it should type Colaboradores in text-input 1`] = `
 <div
-  class="css-17enijm"
+  class="css-zb6yxz"
 >
   <label
     class="css-o15x8b"

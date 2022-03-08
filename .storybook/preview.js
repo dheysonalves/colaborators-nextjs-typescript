@@ -5,7 +5,7 @@ import { theme } from '../src/styles/theme/theme'
 
 export const decorators = [
 	(Story) => (
-		<ThemeProvider theme={theme} >
+		<ThemeProvider theme={theme}>
 			<Global styles={GlobalStyles} />
 			<Story />
 		</ThemeProvider>

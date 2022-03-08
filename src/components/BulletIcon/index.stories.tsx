@@ -4,7 +4,7 @@ import BulletIcon from '.'
 import { FiFileText, FiPhoneCall, FiCalendar, FiUser } from 'react-icons/fi'
 
 export default {
-	title: 'BulletIcon',
+	title: 'General/BulletIcon',
 	component: BulletIcon,
 	args: {
 		Icon: FiFileText,

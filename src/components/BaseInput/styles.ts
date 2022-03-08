@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
 	padding: 8px 14px;
 	border-radius: 8px;
 	border: 2px solid #cad6d1;
+	background-color: #fff;
 
 	label {
 		position: absolute;

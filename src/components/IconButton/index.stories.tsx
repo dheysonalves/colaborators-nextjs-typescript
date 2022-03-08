@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import IconButton from '.'
-import { AiOutlineFileAdd } from 'react-icons/ai'
+import { AiOutlineFileAdd, AiOutlineReload } from 'react-icons/ai'
 
 export default {
 	title: 'Buttons/IconButton',
@@ -11,6 +11,10 @@ export default {
 	},
 } as ComponentMeta<typeof IconButton>
 
-export const Default: ComponentStory<typeof IconButton> = (args) => (
+export const ActionsButton: ComponentStory<typeof IconButton> = (args) => (
 	<IconButton {...args} />
+)
+
+export const LoaderButton: ComponentStory<typeof IconButton> = () => (
+	<IconButton Icon={AiOutlineReload} title="Carregar mais" />
 )

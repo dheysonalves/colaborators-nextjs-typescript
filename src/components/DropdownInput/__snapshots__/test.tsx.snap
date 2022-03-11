@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropdownInput /> should render the heading 1`] = `
+<div
+  class="css-12qk0dp"
+>
+  <label
+    for="standart-select"
+  >
+    Departamento
+  </label>
+  <div
+    class="css-17yg843"
+  >
+    <select
+      class="css-1obrvlm"
+      id="standart-select"
+    >
+      <option
+        class="css-salr3s"
+        value="option 1"
+      >
+        Comercial
+      </option>
+      <option
+        class="css-salr3s"
+        value="option 2"
+      >
+        Option 2
+      </option>
+      <option
+        class="css-salr3s"
+        value="option 3"
+      >
+        Option 3
+      </option>
+      <option
+        class="css-salr3s"
+        value="option 4"
+      >
+        Option 4
+      </option>
+    </select>
+    <div
+      class="css-hd2x4e"
+    >
+      <svg
+        color="#587169"
+        fill="currentColor"
+        height="14"
+        stroke="currentColor"
+        stroke-width="0"
+        style="color: rgb(88, 113, 105);"
+        viewBox="0 0 512 512"
+        width="14"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`

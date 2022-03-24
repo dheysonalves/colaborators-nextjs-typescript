@@ -1,12 +1,27 @@
+import {
+	AgentStatusTypes,
+	DepartamentRolesTypes,
+	NameRolesTypes,
+} from '../api/@types/general.types'
 import { useState, useEffect } from 'react'
 
+export interface DataProps {
+	id: number
+	name: string
+	image: string
+	department: DepartamentRolesTypes
+	branch: string
+	role: NameRolesTypes
+	status: AgentStatusTypes
+}
+
 interface CalculateRangeProps {
-	data: []
+	data: DataProps[]
 	rowsPerPage: number
 }
 
 interface SliceDataProps {
-	data: []
+	data: DataProps[]
 	rowsPerPage: number
 	page: number
 }
@@ -26,15 +41,15 @@ const sliceData = ({ data, page, rowsPerPage }: SliceDataProps) => {
 }
 
 const useTable = ({ data, page, rowsPerPage }: SliceDataProps) => {
-	const [tableRange, setTableRange] = useState([])
-	const [slice, setSlice] = useState([])
+	const [tableRange, setTableRange] = useState<number[]>([])
+	const [slice, setSlice] = useState<DataProps[]>([])
 
 	useEffect(() => {
 		const range = calculateRange({ data, rowsPerPage })
-		setTableRange([...range] as [])
+		setTableRange([...range] as number[])
 
 		const slice = sliceData({ data, page, rowsPerPage })
-		setSlice([...slice])
+		setSlice([...slice] as DataProps[])
 	}, [data, setTableRange, page, setSlice, rowsPerPage])
 
 	return { slice, range: tableRange }

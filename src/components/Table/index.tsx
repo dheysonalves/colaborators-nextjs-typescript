@@ -25,6 +25,8 @@ const Table = ({ data, rowsPerPage }: TableProps) => {
 	const [page, setPage] = useState(1)
 	const { range, slice } = useTable({ data, page, rowsPerPage })
 
+	console.log(page)
+
 	return (
 		<>
 			<TableContainer>

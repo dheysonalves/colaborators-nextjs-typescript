@@ -54,7 +54,7 @@ export default {
 				status: AgentStatusTypes.ACTIVE,
 			},
 		],
-		rowsPerPage: 4,
+		rowsPerPage: 2,
 	},
 } as ComponentMeta<typeof Table>
 

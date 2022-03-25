@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react'
-import { FooterContainer } from './styles'
+import {
+	FooterContainer,
+	FooterNumber,
+	ButtonContainer,
+	BackButtonContainer,
+} from './styles'
 import { DataProps } from '../../../hooks/useTable'
+import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 
 interface TableFooterProps {
 	range: number[]
@@ -18,11 +24,21 @@ const TableFooter = ({ page, range, setPage, slice }: TableFooterProps) => {
 
 	return (
 		<FooterContainer>
-			{range.map((el, index) => (
-				<button key={index} onClick={() => setPage(el)}>
-					{el}
-				</button>
-			))}
+			<BackButtonContainer
+				onClick={() => setPage(page === 1 ? 1 : page - 1)}
+				disabled={page === 1}
+			>
+				<IoIosArrowBack />
+			</BackButtonContainer>
+			<FooterNumber>
+				{page} de {range.length}
+			</FooterNumber>
+			<ButtonContainer
+				onClick={() => setPage(page === range.length ? page : page + 1)}
+				disabled={page === range.length}
+			>
+				<IoIosArrowForward />
+			</ButtonContainer>
 		</FooterContainer>
 	)
 }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
+import { BsThreeDotsVertical } from 'react-icons/bs'
 
 import useTable from '../../hooks/useTable'
 import TableFooter from './TableFooter'
 import { DataProps } from '../../hooks/useTable'
-import { BsThreeDotsVertical } from 'react-icons/bs'
 
 import {
 	TableContainer,
@@ -18,14 +18,12 @@ import StatusPin from '../StatusPin/index'
 
 interface TableProps {
 	data: DataProps[]
-	rowsPerPage: number
 }
 
-const Table = ({ data, rowsPerPage }: TableProps) => {
-	const [page, setPage] = useState(1)
+const Table = ({ data }: TableProps) => {
+	const [page, setPage] = useState<string | number>(1)
+	const [rowsPerPage, setRowsPerPage] = useState<string | number>(data.length)
 	const { range, slice } = useTable({ data, page, rowsPerPage })
-
-	console.log(page)
 
 	return (
 		<>
@@ -61,7 +59,15 @@ const Table = ({ data, rowsPerPage }: TableProps) => {
 					))}
 				</tbody>
 			</TableContainer>
-			<TableFooter range={range} slice={slice} setPage={setPage} page={page} />
+			<TableFooter
+				range={range}
+				slice={slice}
+				setPage={setPage}
+				page={page as number}
+				rowsPerPage={rowsPerPage as number}
+				setRowsPerPage={setRowsPerPage}
+				dataLength={data.length}
+			/>
 		</>
 	)
 }

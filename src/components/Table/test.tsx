@@ -65,7 +65,7 @@ const DATA = [
 const setup = () => {
 	const utils = render(
 		<ThemeProvider theme={theme}>
-			<Table data={DATA} rowsPerPage={2} />,
+			<Table data={DATA} />,
 		</ThemeProvider>,
 	)
 

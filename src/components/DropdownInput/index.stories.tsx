@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import DropdownInput from '.'
 
+const OPTIONSDATA = ['Option 1', 'Option 2', 'Option 3']
+
 export default {
 	title: 'Inputs/DropdownInput',
 	component: DropdownInput,
 	args: {
 		label: 'Departamento',
-		data: ['Option 1', 'Option 2', 'Option 3'],
+		data: OPTIONSDATA,
 	},
 } as ComponentMeta<typeof DropdownInput>
 
@@ -22,7 +24,7 @@ export const WithoutLabel: ComponentStory<typeof DropdownInput> = () => {
 		<DropdownInput
 			hasLabel={false}
 			label="Departamento"
-			data={['Option 1', 'Option 2', 'Option 3']}
+			data={OPTIONSDATA}
 			value={value as string}
 			setValue={setValue}
 		/>

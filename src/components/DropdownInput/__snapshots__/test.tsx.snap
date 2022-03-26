@@ -13,32 +13,26 @@ exports[`<DropdownInput /> should render the heading 1`] = `
     class="css-17yg843"
   >
     <select
-      class="css-1obrvlm"
+      class="css-5puhau"
       id="standart-select"
     >
       <option
         class="css-salr3s"
-        value="option 1"
+        value="1"
       >
-        Comercial
+        1
       </option>
       <option
         class="css-salr3s"
-        value="option 2"
+        value="2"
       >
-        Option 2
+        2
       </option>
       <option
         class="css-salr3s"
-        value="option 3"
+        value="3"
       >
-        Option 3
-      </option>
-      <option
-        class="css-salr3s"
-        value="option 4"
-      >
-        Option 4
+        3
       </option>
     </select>
     <div

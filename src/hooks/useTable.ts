@@ -17,19 +17,18 @@ export interface DataProps {
 
 interface CalculateRangeProps {
 	data: DataProps[]
-	rowsPerPage: number
+	rowsPerPage: number | string
 }
 
 interface SliceDataProps {
 	data: DataProps[]
-	rowsPerPage: number
-	page: number
+	rowsPerPage: number | string
+	page: number | string
 }
 
 const calculateRange = ({ data, rowsPerPage }: CalculateRangeProps) => {
 	const range = []
-	const num = Math.ceil(data.length / rowsPerPage)
-	// const i = 1
+	const num = Math.ceil(data.length / (rowsPerPage as number))
 	for (let i = 1; i <= num; i++) {
 		range.push(i)
 	}
@@ -37,7 +36,10 @@ const calculateRange = ({ data, rowsPerPage }: CalculateRangeProps) => {
 }
 
 const sliceData = ({ data, page, rowsPerPage }: SliceDataProps) => {
-	return data.slice((page - 1) * rowsPerPage, page * rowsPerPage)
+	return data.slice(
+		((page as number) - 1) * (rowsPerPage as number),
+		(page as number) * (rowsPerPage as number),
+	)
 }
 
 const useTable = ({ data, page, rowsPerPage }: SliceDataProps) => {

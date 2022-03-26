@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 import {
 	AbsoluteIcon,
@@ -9,25 +9,43 @@ import {
 } from './styles'
 
 interface DropdownInputProps {
-	label: string
+	label?: string
+	data: string[] | number[]
+	hasLabel?: boolean
+	value: string
+	setValue: (value: string | number) => void
 }
 
-const DropdownInput = ({ label }: DropdownInputProps) => {
-	const [dropdownIconState, updateDropdownIconState] = React.useState(false)
+const DropdownInput = ({
+	label,
+	data,
+	hasLabel = true,
+	value,
+	setValue,
+}: DropdownInputProps) => {
+	const [dropdownIconState, updateDropdownIconState] = useState(false)
 	const ICON_SIZE = 14
 
 	return (
 		<Container>
-			<label htmlFor="standart-select">{label}</label>
+			{hasLabel && <label htmlFor="standart-select">{label}</label>}
 			<SelectContainer>
 				<Select
 					id="standart-select"
 					onClick={() => updateDropdownIconState(!dropdownIconState)}
+					value={value}
+					onChange={(e) => setValue(e.target.value)}
 				>
-					<Option value="option 1">Comercial</Option>
-					<Option value="option 2">Option 2</Option>
-					<Option value="option 3">Option 3</Option>
-					<Option value="option 4">Option 4</Option>
+					{data.map((item, index) => {
+						return (
+							<Option
+								value={item.toString().toLocaleLowerCase()}
+								key={index.toString()}
+							>
+								{item}
+							</Option>
+						)
+					})}
 				</Select>
 				<AbsoluteIcon>
 					{dropdownIconState ? (

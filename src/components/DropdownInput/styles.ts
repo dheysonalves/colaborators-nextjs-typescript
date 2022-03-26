@@ -26,7 +26,7 @@ export const SelectContainer = styled.div`
 export const Select = styled.select`
 	width: 100%;
 	border-radius: 8px;
-	padding: 1.5em 1em;
+	padding: 1.1em 1em;
 	font-size: 16px;
 	font-weight: 500;
 	cursor: pointer;

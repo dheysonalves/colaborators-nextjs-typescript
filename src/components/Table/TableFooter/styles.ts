@@ -2,15 +2,31 @@ import styled from '@emotion/styled'
 
 export const FooterContainer = styled.div`
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
 	background-color: transparent;
 	padding: 20px;
 `
 
+export const FooterRows = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+`
+
+export const DropdownInputContainer = styled.div`
+	width: 100px;
+`
+
+export const SpanResults = styled.span`
+	font-size: 1rem;
+	font-weight: 400;
+	margin-right: 1em;
+`
+
 export const FooterNumber = styled.span`
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1rem;
 	text-align: center;
 	padding-right: 3px;
 	color: #587169;

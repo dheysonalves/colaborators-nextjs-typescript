@@ -5,7 +5,7 @@ import {
 } from './@types/general.types'
 import HttpInstance from './config/HttpCustomInstance'
 
-interface IAgentsResponse {
+export interface IAgentsResponse {
 	items: {
 		agent_id: number
 		name: string

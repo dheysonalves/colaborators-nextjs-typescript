@@ -1,9 +1,11 @@
 import styled from '@emotion/styled'
 import { BaseTypography } from '../../Typography/base.index'
 
-export const ContainerBorder = styled.div`
+export const ContainerBorder = styled.div<{
+	isActive: boolean
+}>`
 	border-radius: 8px;
-	border: 2px solid #b5f1dd;
+	border: 2px solid ${(props) => (props.isActive ? '#b5f1dd' : '#EAEFED')};
 	padding: 24px 16px;
 `
 

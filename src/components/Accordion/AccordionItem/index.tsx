@@ -24,10 +24,10 @@ export interface IAccordionItemProps {
 		agent_id: number
 		name: string
 		image: string
-		department: DepartamentRolesTypes
+		department: DepartamentRolesTypes | string
 		branch: string
-		role: NameRolesTypes
-		status: AgentStatusTypes
+		role: NameRolesTypes | string
+		status: AgentStatusTypes | string
 	}
 }
 
@@ -35,7 +35,7 @@ const AccordionItem = ({ data }: IAccordionItemProps) => {
 	const [toogle, setToogle] = useState(false)
 
 	return (
-		<ContainerBorder>
+		<ContainerBorder isActive={data.status === 'active'}>
 			<Container column>
 				<Title tag="h1">Nome Completo</Title>
 				<ButtoHeaderContainer

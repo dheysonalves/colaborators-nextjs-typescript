@@ -20,7 +20,7 @@ export const UserAvatar = styled.div`
 export const Name = styled(DynamicTypography)`
 	line-height: 100%;
 	font-size: 14px;
-	color: ${theme.light.primary.green};
+	color: ${theme.light.neutral.black};
 	text-transform: uppercase;
 	font-weight: 400;
 `

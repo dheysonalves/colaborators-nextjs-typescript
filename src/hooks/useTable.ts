@@ -6,13 +6,13 @@ import {
 import { useState, useEffect } from 'react'
 
 export interface DataProps {
-	id: number
+	agent_id: number
 	name: string
 	image: string
-	department: DepartamentRolesTypes
+	department: DepartamentRolesTypes | string
 	branch: string
-	role: NameRolesTypes
-	status: AgentStatusTypes
+	role: NameRolesTypes | string
+	status: AgentStatusTypes | string
 }
 
 interface CalculateRangeProps {

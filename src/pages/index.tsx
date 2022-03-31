@@ -6,6 +6,8 @@ import SheetInput from 'components/SheetInput'
 import BaseInput from 'components/BaseInput'
 import AccordionItem from 'components/Accordion/AccordionItem'
 import { agents } from 'mocks/agents'
+import Media from 'react-media'
+import Table from 'components/Table'
 
 export default function Home() {
 	const [data, setData] = useState(agents.items)
@@ -35,13 +37,26 @@ export default function Home() {
 				</ActionContainer>
 				<ActionContainer>
 					<Typography tag="h2">Listagem de colaboradores</Typography>
-					{data.map((item, index) => {
-						return (
-							<Spacing my={15} key={index}>
-								<AccordionItem data={item} />
+					<Media
+						query="(max-width: 1199px)"
+						render={() =>
+							data.map((item, index) => {
+								return (
+									<Spacing my={15} key={index}>
+										<AccordionItem data={item} />
+									</Spacing>
+								)
+							})
+						}
+					/>
+					<Media
+						query="(min-width: 1200px)"
+						render={() => (
+							<Spacing my={15}>
+								<Table data={agents.items} />
 							</Spacing>
-						)
-					})}
+						)}
+					/>
 				</ActionContainer>
 			</Wrapper>
 		</Container>

@@ -39,10 +39,10 @@ const Table = ({ data }: TableProps) => {
 				</ThreadContainer>
 				<tbody>
 					{slice.map((item) => (
-						<tr key={item.id}>
+						<tr key={item.agent_id}>
 							<TableCell>
 								<NameImageWrapper>
-									<ImageCell src="https://dailystatuss.com/wp-content/uploads/2022/02/273537712_1855045481347254_3794366435422454151_n.jpg" />
+									<ImageCell src={item.image} />
 									<NameSpan>{item.name}</NameSpan>
 								</NameImageWrapper>
 							</TableCell>

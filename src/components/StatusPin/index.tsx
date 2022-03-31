@@ -4,7 +4,7 @@ import { AgentStatusTypes } from '../../api/@types/general.types'
 import { Pin, StatusText } from './styles'
 
 type StatusPinProps = {
-	status: AgentStatusTypes
+	status: AgentStatusTypes | string
 }
 
 const StatusPin = ({ status }: StatusPinProps) => {

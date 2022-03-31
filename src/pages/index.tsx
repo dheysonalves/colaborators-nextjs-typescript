@@ -29,7 +29,7 @@ export default function Home() {
 					<Spacing my={40}>
 						<BaseInput
 							label="Pesquisar por"
-							placeholderText="Pesquise por nome ou cpf"
+							placeholderText="Pesquise por nome"
 						/>
 					</Spacing>
 				</ActionContainer>

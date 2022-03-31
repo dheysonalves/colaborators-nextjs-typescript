@@ -6,6 +6,8 @@ export const Wrapper = styled(Container)`
 	border: 1px solid ${theme.light.tertiary.disabled};
 	justify-content: space-between;
 	align-items: center;
+	padding: 16px;
+	background-color: #fff;
 `
 export const RightBorder = styled.div`
 	border-right: 1px solid ${theme.light.tertiary.disabled};

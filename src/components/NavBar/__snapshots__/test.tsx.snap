@@ -2,7 +2,7 @@
 
 exports[`<NavBar /> should render the heading 1`] = `
 <div
-  class="css-1s162ov"
+  class="css-1vlq3jg"
 >
   <div
     class="css-7zkc34"
@@ -14,7 +14,7 @@ exports[`<NavBar /> should render the heading 1`] = `
         class="css-t2lkvl"
       >
         <p
-          class="css-1m4s1rb"
+          class="css-32r4px"
         >
           DA
         </p>
@@ -65,7 +65,7 @@ exports[`<NavBar /> should render the heading 1`] = `
         class="css-t2lkvl"
       >
         <p
-          class="css-1m4s1rb"
+          class="css-32r4px"
         >
           DA
         </p>

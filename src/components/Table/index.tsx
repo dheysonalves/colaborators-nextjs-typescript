@@ -38,11 +38,16 @@ const Table = ({ data }: TableProps) => {
 					</tr>
 				</ThreadContainer>
 				<tbody>
-					{slice.map((item) => (
+					{slice.map((item, index) => (
 						<tr key={item.agent_id}>
 							<TableCell>
 								<NameImageWrapper>
-									<ImageCell src={item.image} />
+									{item.image && (
+										<ImageCell
+											src={item.image}
+											alt={`An User image_${index}`}
+										/>
+									)}
 									<NameSpan>{item.name}</NameSpan>
 								</NameImageWrapper>
 							</TableCell>

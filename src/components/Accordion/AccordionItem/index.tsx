@@ -43,7 +43,10 @@ const AccordionItem = ({ data }: IAccordionItemProps) => {
 					aria-label="button-toogle"
 				>
 					<CustomFlexContainer>
-						<UserAvatar src={data.image ?? '/img/brand.svg'} />
+						<UserAvatar
+							src={data.image ?? '/img/brand.svg'}
+							alt="User accordion image"
+						/>
 						<UserTitleName tag="h1">{data.name}</UserTitleName>
 					</CustomFlexContainer>
 					{toogle ? (

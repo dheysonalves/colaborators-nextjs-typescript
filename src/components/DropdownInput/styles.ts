@@ -11,7 +11,7 @@ export const Container = styled.div`
 		top: -10px;
 		left: 10px;
 		background-color: ${(props) => props.theme.light.neutral.neutral_2};
-		color: ${(props) => props.theme.light.neutral.neutral_3};
+		color: #546d60;
 		padding: 0 1em;
 		font-size: 14px;
 	}

@@ -20,6 +20,7 @@ exports[`<AccordionItem /> should render the branch \`Quartel General\` 1`] = `
         class="css-o34hqt"
       >
         <img
+          alt="User accordion image"
           class="css-1q4j5aa"
           src="/img/brand.svg"
         />
@@ -134,6 +135,7 @@ exports[
         class="css-o34hqt"
       >
         <img
+          alt="User accordion image"
           class="css-1q4j5aa"
           src="/img/brand.svg"
         />
@@ -248,6 +250,7 @@ exports[
         class="css-o34hqt"
       >
         <img
+          alt="User accordion image"
           class="css-1q4j5aa"
           src="/img/brand.svg"
         />
@@ -360,6 +363,7 @@ exports[`<AccordionItem /> should render the role \`Analista\` 1`] = `
         class="css-o34hqt"
       >
         <img
+          alt="User accordion image"
           class="css-1q4j5aa"
           src="/img/brand.svg"
         />
@@ -472,6 +476,7 @@ exports[`<AccordionItem /> should render the status \`Ativo\` 1`] = `
         class="css-o34hqt"
       >
         <img
+          alt="User accordion image"
           class="css-1q4j5aa"
           src="/img/brand.svg"
         />

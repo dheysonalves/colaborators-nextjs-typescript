@@ -5,7 +5,7 @@ exports[`<BaseInput /> it should allow Colaboradores to be deleted 1`] = `
   class="css-zb6yxz"
 >
   <label
-    class="css-o15x8b"
+    class="css-au0td9"
     for="input-search"
   >
     Pesquise por nome ou cpf
@@ -56,7 +56,7 @@ exports[`<BaseInput /> it should type Colaboradores in text-input 1`] = `
   class="css-zb6yxz"
 >
   <label
-    class="css-o15x8b"
+    class="css-au0td9"
     for="input-search"
   >
     Pesquise por nome ou cpf

@@ -29,7 +29,7 @@ export const IconWrapper = styled(Container)`
 `
 
 export const Label = styled.label`
-	color: #a3b8b0;
+	color: #546d60;
 	font-size: 14px;
 	font-weight: 500;
 `

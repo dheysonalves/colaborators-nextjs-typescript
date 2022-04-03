@@ -35,6 +35,7 @@ const DropdownInput = ({
 					onClick={() => updateDropdownIconState(!dropdownIconState)}
 					value={value}
 					onChange={(e) => setValue(e.target.value)}
+					aria-label="A select for the user"
 				>
 					{data.map((item, index) => {
 						return (

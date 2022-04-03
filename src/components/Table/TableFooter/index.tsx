@@ -56,6 +56,7 @@ const TableFooter = ({
 				<BackButtonContainer
 					onClick={() => setPage(page === 1 ? 1 : page - 1)}
 					disabled={page === 1}
+					aria-label="Back button icon"
 				>
 					<IoIosArrowBack />
 				</BackButtonContainer>
@@ -65,6 +66,7 @@ const TableFooter = ({
 				<ButtonContainer
 					onClick={() => setPage(page === range.length ? page : page + 1)}
 					disabled={page === range.length}
+					aria-label="Forward button icon"
 				>
 					<IoIosArrowForward />
 				</ButtonContainer>

@@ -2,7 +2,7 @@
 
 exports[`<DropdownInput /> should render the heading 1`] = `
 <div
-  class="css-12qk0dp"
+  class="css-185xvve"
 >
   <label
     for="standart-select"
@@ -13,6 +13,7 @@ exports[`<DropdownInput /> should render the heading 1`] = `
     class="css-17yg843"
   >
     <select
+      aria-label="A select for the user"
       class="css-5puhau"
       id="standart-select"
     >

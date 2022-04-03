@@ -1,11 +1,12 @@
 module.exports = {
-  "stories": [
-    "../src/components/**/*.stories.mdx",
-    "../src/components/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  "addons": [
+	"stories": [
+		"../src/components/**/*.stories.mdx",
+		"../src/components/**/*.stories.@(js|jsx|ts|tsx)"
+	],
+	"addons": [
 		"@storybook/addon-essentials",
-  ],
+		"@storybook/addon-a11y"
+	],
 	previewHead: (head) => (`
     ${head}
     <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -96,7 +96,7 @@ exports[`<BaseInput /> it should type Colaboradores in text-input 1`] = `
       name="input-search"
       placeholder="Pesquise por"
       type="text"
-      value="Colaboradores"
+      value=""
     />
   </div>
 </div>

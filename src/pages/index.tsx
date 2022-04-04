@@ -9,9 +9,11 @@ import AccordionItem from 'components/Accordion/AccordionItem'
 import { agents } from 'mocks/agents'
 import Media from 'react-media'
 import Table from 'components/Table'
+import useTextInput from 'hooks/useTextInput/useTextInput'
 
 export default function Home() {
 	const [data, setData] = useState(agents.items)
+	const { text, updateText } = useTextInput()
 
 	const getAgents = useCallback(async () => {
 		const { items } = agents
@@ -33,6 +35,8 @@ export default function Home() {
 						<BaseInput
 							label="Pesquisar por"
 							placeholderText="Pesquise por nome"
+							value={text}
+							handleChange={updateText}
 						/>
 					</Spacing>
 				</ActionContainer>

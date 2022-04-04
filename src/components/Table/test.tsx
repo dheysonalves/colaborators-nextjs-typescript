@@ -11,7 +11,7 @@ import Table from '.'
 
 const DATA = [
 	{
-		id: 1,
+		agent_id: 1,
 		branch: 'Quartel General',
 		department: DepartamentRolesTypes.ADMINISTRATIVE,
 		name: 'Pikachu Soares do Santos Dias',
@@ -21,7 +21,7 @@ const DATA = [
 			'https://dailystatuss.com/wp-content/uploads/2022/02/273537712_1855045481347254_3794366435422454151_n.jpg',
 	},
 	{
-		id: 2,
+		agent_id: 2,
 		branch: 'Quartel General',
 		department: DepartamentRolesTypes.ADMINISTRATIVE,
 		name: 'Pikachu Soares do Santos Dias',
@@ -31,7 +31,7 @@ const DATA = [
 			'https://dailystatuss.com/wp-content/uploads/2022/02/273537712_1855045481347254_3794366435422454151_n.jpg',
 	},
 	{
-		id: 3,
+		agent_id: 3,
 		branch: 'Quartel General',
 		department: DepartamentRolesTypes.ADMINISTRATIVE,
 		name: 'Pikachu Soares do Santos Dias',
@@ -41,7 +41,7 @@ const DATA = [
 			'https://dailystatuss.com/wp-content/uploads/2022/02/273537712_1855045481347254_3794366435422454151_n.jpg',
 	},
 	{
-		id: 4,
+		agent_id: 4,
 		branch: 'Quartel General',
 		department: DepartamentRolesTypes.ADMINISTRATIVE,
 		name: 'Pikachu Soares do Santos Dias',
@@ -51,7 +51,7 @@ const DATA = [
 			'https://dailystatuss.com/wp-content/uploads/2022/02/273537712_1855045481347254_3794366435422454151_n.jpg',
 	},
 	{
-		id: 5,
+		agent_id: 5,
 		branch: 'Quartel General',
 		department: DepartamentRolesTypes.ADMINISTRATIVE,
 		name: 'Pikachu Soares do Santos Dias',

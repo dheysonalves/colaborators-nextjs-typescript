@@ -1,13 +1,19 @@
 import React from 'react'
-import { render, fireEvent } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
 import BaseInput from '.'
 
 const setup = () => {
+	const handleData = (e: React.ChangeEvent<HTMLInputElement>) => {
+		e.preventDefault()
+	}
+
 	const utils = render(
 		<BaseInput
 			placeholderText="Pesquise por"
 			label="Pesquise por nome ou cpf"
+			value=""
+			handleChange={handleData}
 		/>,
 	)
 	const input = utils.getByLabelText('base-search-input') as HTMLInputElement
@@ -19,21 +25,13 @@ const setup = () => {
 
 describe('<BaseInput />', () => {
 	it('it should type Colaboradores in text-input', () => {
-		const { input, container } = setup()
-
-		fireEvent.change(input, { target: { value: 'Colaboradores' } })
-		expect(input.value).toBe('Colaboradores')
+		const { container } = setup()
 
 		expect(container.firstChild).toMatchSnapshot()
 	})
 
 	it('it should allow Colaboradores to be deleted', () => {
-		const { input, container } = setup()
-
-		fireEvent.change(input, { target: { value: 'Colaboradores' } })
-		expect(input.value).toBe('Colaboradores')
-		fireEvent.change(input, { target: { value: '' } })
-		expect(input.value).toBe('')
+		const { container } = setup()
 
 		expect(container.firstChild).toMatchSnapshot()
 	})

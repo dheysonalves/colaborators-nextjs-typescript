@@ -5,16 +5,16 @@ import { FiSearch } from 'react-icons/fi'
 interface BaseInputProps {
 	label: string
 	placeholderText: string
+	value: string
+	handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const BaseInput = ({ label, placeholderText }: BaseInputProps) => {
-	const [text, updateText] = React.useState('')
-
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		e.preventDefault()
-		updateText(e.target.value)
-	}
-
+const BaseInput = ({
+	label,
+	placeholderText,
+	value,
+	handleChange,
+}: BaseInputProps) => {
 	return (
 		<S.Wrapper>
 			<S.Label htmlFor="input-search">{label}</S.Label>
@@ -26,7 +26,7 @@ const BaseInput = ({ label, placeholderText }: BaseInputProps) => {
 					id="input-search"
 					aria-label="base-search-input"
 					placeholder={placeholderText}
-					value={text}
+					value={value}
 					onChange={(e) => handleChange(e)}
 				/>
 			</S.IconWrapper>

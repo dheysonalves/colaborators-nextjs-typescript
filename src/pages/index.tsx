@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from 'react'
+import React, { useCallback, useState, useEffect, useMemo } from 'react'
 // import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { Container, Wrapper, ActionContainer, Spacing } from './index.styles'
 import NavBar from 'components/NavBar'
@@ -19,6 +19,12 @@ export default function Home() {
 		const { items } = agents
 		setData(items)
 	}, [])
+
+	const filterAgentsName = useMemo(() => {
+		return data.filter((item) =>
+			item.name.toLowerCase().includes(text.toLowerCase()),
+		)
+	}, [data, text])
 
 	useEffect(() => {
 		getAgents()
@@ -45,7 +51,7 @@ export default function Home() {
 					<Media
 						query="(max-width: 1199px)"
 						render={() =>
-							data.map((item, index) => {
+							filterAgentsName.map((item, index) => {
 								return (
 									<Spacing my={15} key={index}>
 										<AccordionItem data={item} />
@@ -58,7 +64,7 @@ export default function Home() {
 						query="(min-width: 1200px)"
 						render={() => (
 							<Spacing my={15}>
-								<Table data={agents.items} />
+								<Table data={filterAgentsName} />
 							</Spacing>
 						)}
 					/>

@@ -1,9 +1,5 @@
 
-![React Avançado](./docs/reactjs-nextjs-cover.png)
-
-This is a [Next.js](https://nextjs.org/) boilerplate based on a course called [React Avançado](https://reactavancado.com.br/).
-
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
+![WORKERS LIST NEXT.JS - STORYBOOK](./docs/desktop.png)
 
 ## What is inside?
 
